@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-firebase-ngrx",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -109,10 +109,16 @@
               "devServerTarget": "angular-firebase-ngrx:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
   },
   "defaultProject": "angular-firebase-ngrx",
-  "cli": { "defaultCollection": "@ngrx/schematics" }
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

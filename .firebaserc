@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "angular-firebase-ngrx"
+  },
+  "targets": {
+    "angular-firebase-ngrx": {
+      "hosting": {
+        "angular-firebase-ngrx": [
+          "angular-firebase-ngrx"
+        ]
+      }
+    }
+  }
+}
