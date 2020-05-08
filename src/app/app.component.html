@@ -1,6 +1,11 @@
 <div>
   <a routerLink="/home">Home</a>
-  <a routerLink="/auth/login">Login</a>
+  <a type="button" *ngIf="!(isAuthenticated$ | async)" routerLink="/auth/login">
+    Login
+  </a>
+  <button type="button" *ngIf="isAuthenticated$ | async" (click)="logout()">
+    Logout
+  </button>
 </div>
 
 <router-outlet></router-outlet>
